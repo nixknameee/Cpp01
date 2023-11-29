@@ -55,9 +55,48 @@ This project, part of the C++ Module 01, focuses on introducing and reinforcing 
 
 **Note**: This exercise demonstrates dynamic memory allocation for multiple objects, proper object initialization, and memory management in C++.
 
+
 ### Exercise 02: HI THIS IS BRAIN
-- Focus: Demystifying references.
-- Key Components: Manipulating a string using pointers and references.
+- **Focus**: Demystifying references.
+- **Key Components**:
+  - String manipulation using pointers and references.
+  - Exploration of memory address and value access patterns.
+- **Code Overview**:
+  - A string `"HI THIS IS BRAIN"` is initialized.
+  - Two variables, `stringPTR` (a pointer) and `stringREF` (a reference), are created to point to this string.
+  - The program prints:
+    - The memory addresses of the string variable, the pointer, and the reference.
+    - The values accessed directly through the string variable, dereferenced from the pointer, and accessed via the reference.
+  - This exercise demonstrates how pointers and references can be used to access and manipulate data in C++.
+
+#### Example Code Snippet:
+```cpp
+#include <iostream>
+
+int main (void) {
+    std::string string = "HI THIS IS BRAIN";
+    std::string *stringPTR = &string;
+    std::string &stringREF = string;
+
+    // Printing the memory addresses
+    std::cout << &string << ": Address of string variable " << std::endl;
+    std::cout << stringPTR <<  ": Address held by stringPTR " << std::endl;
+    std::cout << &stringREF << ": Address held by stringREF" << std::endl;
+
+    // Printing the values
+    std::cout << string << ": Value of string variable " << std::endl;
+    std::cout << *stringPTR << ": Value pointed to by stringPTR"  << std::endl;
+    std::cout << stringREF << ": Value pointed to by stringREF" << std::endl;
+
+    return 0;
+}
+```
+
+
+
+
+
+
 
 ### Exercise 03: Unnecessary violence
 - Focus: Differences between pointers and references.
