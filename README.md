@@ -57,6 +57,7 @@ This project, part of the C++ Module 01, focuses on introducing and reinforcing 
 
 
 ### Exercise 02: HI THIS IS BRAIN
+
 - **Focus**: Demystifying references.
 - **Key Components**:
   - String manipulation using pointers and references.
@@ -91,11 +92,6 @@ int main (void) {
     return 0;
 }
 ```
-
-
-
-
-
 
 
 ### Exercise 03: Unnecessary violence
