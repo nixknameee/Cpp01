@@ -31,8 +31,28 @@ This project, part of the C++ Module 01, focuses on introducing and reinforcing 
   - `Zombie.hpp`: Header file for the `Zombie` class with class declaration.
 
 ### Exercise 01: Moar brainz!
-- Focus: Allocating multiple objects simultaneously.
-- Key Components: `zombieHorde` function using `new[]`.
+- **Focus**: Allocating multiple objects simultaneously.
+- **Task**: Implement a `zombieHorde` function using `new[]`.
+- **Code Summary**:
+  - **main.cpp**: 
+    - A horde of zombies (`Zombie*`) is created using the `zombieHorde` function with a specified number (`N`).
+    - Each zombie in the horde announces itself using the `announce` method.
+    - The horde is then deleted using `delete[]`.
+  - **Zombie.cpp**:
+    - Contains the implementation of the `Zombie` class.
+    - The constructor (`Zombie(std::string name)`) initializes the zombie's name.
+    - The destructor prints a debug message when a zombie is destroyed.
+    - `announce` method prints the zombie's announcement.
+    - `setZombie` method sets the name of the zombie.
+  - **Zombie.hpp**:
+    - Header file for the `Zombie` class.
+    - Declares constructors, destructor, and member functions.
+  - **zombieHorde.cpp**:
+    - Implements the `zombieHorde` function.
+    - Allocates an array of `Zombie` objects on the heap.
+    - Initializes each zombie's name and returns a pointer to the first zombie.
+
+**Note**: This exercise demonstrates dynamic memory allocation for multiple objects, proper object initialization, and memory management in C++.
 
 ### Exercise 02: HI THIS IS BRAIN
 - Focus: Demystifying references.
