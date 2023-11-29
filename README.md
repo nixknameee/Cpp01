@@ -1,4 +1,4 @@
-# C++ Module 01 Project README
+# C++ Module 01 Project
 
 ## Overview
 This project, part of the C++ Module 01, focuses on introducing and reinforcing concepts in memory allocation, pointers to members, references, and switch statements in C++.
