@@ -30,6 +30,7 @@ This project, part of the C++ Module 01, focuses on introducing and reinforcing 
   - `Zombie.cpp`: Contains `Zombie` class constructor, destructor, and `announce`.
   - `Zombie.hpp`: Header file for the `Zombie` class with class declaration.
 
+
 ### Exercise 01: Moar brainz!
 - **Focus**: Allocating multiple objects simultaneously.
 - **Task**: Implement a `zombieHorde` function using `new[]`.
