@@ -17,7 +17,18 @@ This project, part of the C++ Module 01, focuses on introducing and reinforcing 
 
 ### Exercise 00: BraiiiiiiinnnzzzZ
 - Focus: Memory allocation in C++.
-- Key Components: `Zombie` class with private attributes, constructors, and member functions.
+ **Implementation**:
+  - `Zombie` class with private `name` attribute.
+  - `announce` method for Zombies to introduce themselves.
+  - `newZombie` function to create and return a new Zombie.
+  - `randomChump` function to create a Zombie that announces itself and gets destroyed automatically.
+  - Main function demonstrates creating a Zombie on the heap and on the stack.
+- **Code Structure**:
+  - `main.cpp`: Entry point demonstrating Zombie creation and annihilation.
+  - `newZombie.cpp`: Implements `newZombie` to allocate a Zombie dynamically.
+  - `randomChump.cpp`: Implements `randomChump` for stack-based Zombie.
+  - `Zombie.cpp`: Contains `Zombie` class constructor, destructor, and `announce`.
+  - `Zombie.hpp`: Header file for the `Zombie` class with class declaration.
 
 ### Exercise 01: Moar brainz!
 - Focus: Allocating multiple objects simultaneously.
