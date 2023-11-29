@@ -95,12 +95,32 @@ int main (void) {
 
 
 ### Exercise 03: Unnecessary violence
-- Focus: Differences between pointers and references.
-- Key Components: `Weapon`, `HumanA`, and `HumanB` classes.
+- **Focus**: Understanding the differences between pointers and references.
+- **Key Components**:
+  - `Weapon` class with a type string and methods `getType()` and `setType()`.
+  - Two classes, `HumanA` and `HumanB`, each possessing a weapon and the ability to attack.
+- **Code Overview**:
+  - The `Weapon` class stores the type of the weapon and allows setting and retrieving this type.
+  - `HumanA` uses a reference to `Weapon`, while `HumanB` uses a pointer.
+  - In the `main` function, a `Weapon` object is created and then passed to both `HumanA` and `HumanB`.
+  - Both Human classes have an `attack` method, enabling them to attack with their respective weapons.
+  - The main distinction lies in how `HumanA` and `HumanB` store and access their weapons, illustrating the concepts of references and pointers in C++.
+
 
 ### Exercise 04: Sed is for losers
-- Focus: File manipulation.
-- Key Components: String replacement in a file using `ifstream` and `ofstream`.
+- **Focus**: File manipulation with `ifstream` and `ofstream`.
+- **Task**: Implement a program that performs string replacement in a file.
+- **Code Overview**:
+  - `main.cpp`: The main file checks the command-line arguments and handles user input. It uses `isFileEmpty` to check if the provided file is empty and calls `replace` for string replacement.
+  - `replace.cpp`: Contains the `replace` function. It opens the file, reads its content into a string, replaces occurrences of `string1` with `string2`, and writes the result to a new file.
+  - `replace.hpp`: Header file defining constants for text formatting and the prototype for the `replace` function.
+- **Key Features**:
+  - Error handling for incorrect command-line arguments, empty strings, and empty files.
+  - Use of standard C++ file streams (`ifstream` and `ofstream`) for file operations.
+  - String processing using the standard `std::string` class and its functions.
+  - Dynamic string replacement logic within the file content.
+ 
+  - 
 
 ### Exercise 05: Harl 2.0
 - Focus: Pointers to class member functions.
